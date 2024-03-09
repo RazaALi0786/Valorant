@@ -10,7 +10,7 @@ function Nav() {
             className="h-8 text-white"
             alt="Valorant Logo"
           />
-          <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white dark:text-red-500">
+          <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-red-500">
             VALORANT
           </span>
         </a>
