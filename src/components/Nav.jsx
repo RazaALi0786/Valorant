@@ -2,16 +2,16 @@
 
 function Nav() {
   return (
-    <nav className="bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700">
+    <nav className="bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700 font-valorant">
       <div className="flex flex-wrap items-center justify-between max-w-screen-xl p-4 mx-auto">
         <a href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
           <img
-            src="https://flowbite.com/docs/images/logo.svg"
-            className="h-8"
-            alt="Flowbite Logo"
+            src="/src/images/Valorant-aPVsZquE_brandlogos.net.svg"
+            className="h-8 text-white"
+            alt="Valorant Logo"
           />
-          <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
-            Valorant
+          <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white hover:text-red-600">
+            VALORANT
           </span>
         </a>
         <button
@@ -43,7 +43,7 @@ function Nav() {
             <li>
               <a
                 href="/"
-                className="block px-3 py-2 text-white bg-red-700 rounded md:bg-transparent md:text-red-700 md:p-0 md:dark:text-red-500 dark:bg-red-600 md:dark:bg-transparent"
+                className="block px-3 py-2 text-white bg-red-700 rounded md:bg-transparent md:hover:text-red-700 md:p-0 md:dark:hover:text-red-500 dark:bg-red-600 md:dark:bg-transparent"
                 aria-current="page"
               >
                 Home
