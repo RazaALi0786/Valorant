@@ -6,7 +6,7 @@ function Nav() {
       <div className="flex flex-wrap items-center justify-between max-w-screen-xl p-4 mx-auto">
         <a href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
           <img
-            src="/src/images/Valorant-aPVsZquE_brandlogos.net.svg"
+            src="/src/assets/images/Valorant-aPVsZquE_brandlogos.net.svg"
             className="h-8 text-white"
             alt="Valorant Logo"
           />

@@ -7,7 +7,7 @@ export default {
         valorant: ["Valorant"],
       },
       backgroundImage: {
-        "hero-pattern": "url('./images/valorant.png')",
+        "hero-pattern": "url('@/assets/images/valorant.png')",
       },
     },
   },
