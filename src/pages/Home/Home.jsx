@@ -1,8 +1,10 @@
 const Home = () => {
   return (
     <>
-      <div className="text-center text-white bg-gray-800 font-valorant">
-        VALORANT
+      <div className="text-center text-white bg-no-repeat bg-contain h-[100vh] bg-hero-pattern font-valorant relaitve">
+        <button className="absolute font-mono font-bold transform -translate-x-1/2 top-52 bg-[#ff4655] px-2 py-1 cursor-pointer aboslute left-1/2">
+          What Is Valorant
+        </button>
       </div>
     </>
   );

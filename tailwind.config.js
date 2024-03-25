@@ -6,6 +6,9 @@ export default {
       fontFamily: {
         valorant: ["Valorant"],
       },
+      backgroundImage: {
+        "hero-pattern": "url('./images/valorant.png')",
+      },
     },
   },
   plugins: [],
