@@ -108,15 +108,3 @@ Welcome to the **Valorant Wikipedia**! This comprehensive guide covers everythin
 Remember, Valorant is not just a game—it's a dynamic and evolving experience. Enjoy your journey, and may your shots always be accurate! 🎮🔥
 
 ![Valorant](https://i.imgur.com/6Q5YQJx.jpg)
-
-Source: Conversation with Bing, 25/3/2024
-(1) Valorant - Wikipedia. https://en.wikipedia.org/wiki/Valorant.
-(2) What is Valorant? Everything we know about Riot’s shooter. https://www.digitaltrends.com/gaming/what-is-valorant/.
-(3) VALORANT: Riot Games’ competitive 5v5 character-based tactical shooter. https://playvalorant.com/.
-(4) valorant game information|Valorant: The Game That Is Conquering The Market. https://gurugamer.com/pc-console/valorant-the-game-that-is-conquering-the-market-12762.
-(5) valorant game information|Valorant Download First Impressions: How To Get The Beta. https://gurugamer.com/pc-console/valorant-download-first-impressions-9654.
-(6) valorant game information|6 Best Guns In Valorant To Use In Any Scenario | Cashify Blog. https://www.cashify.in/best-guns-in-valorant.
-(7) valorant game information|Skin Bundles Valorant อาวุธ เทียร์, 49% OFF. http://iiitl.ac.in/?k=skin-bundles-valorant-อาวุธ-เทียร์-และ-ราคา-ทั้งหมด-cc-oDGl6DsY.
-(8) valorant game information|Riot To Toggle Blood Off In Valorant Esports. https://in.ign.com/riot-games-tactical-fps/146889/news/riot-to-toggle-blood-off-in-valorant-esports.
-(9) valorant game information|Buy Valorant 2022: OFFICIAL 2022 - Video Game 2022 - Valorant -18 .... https://www.desertcart.in/products/458352518-valorant-calendar-2022-official-2022-calendar-video-game-2022-calendar-valorant-18-monthly-2022-2023-calendar-planner-gifts-for-boys-girls-games-kalendar-calendario-calendrier-30.
-(10) VALORANT | Valorant Wiki | Fandom. https://valorant.fandom.com/wiki/VALORANT.
