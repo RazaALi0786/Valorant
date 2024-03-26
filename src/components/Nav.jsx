@@ -4,13 +4,37 @@ import {useEffect, useRef, useState} from "react";
 
 function Nav() {
 
+  // State for the dropdown menu
   const [showDropdown, setShowDropdown] = useState(false);
+  const [showHamburgerMenu, setShowHamburgerMenu] = useState(false);
+  
+  // Ref for the dropdown menu
   const dropDownRef = useRef(null);
+  const hamDropDownRef = useRef(null);
 
+  // Event listener to close the dropdown menu when clicking outside
   useEffect(() => {
     function handleClickedOutside(e) {
+      // If the dropdown menu is open and the click is outside the dropdown menu, then close the dropdown menu
       if(dropDownRef.current && !dropDownRef.current.contains(e.target)) {
         setShowDropdown(false);
+      }
+    }
+
+    document.addEventListener("click", handleClickedOutside);
+
+    // Cleanup function (good practice)
+    return () => {
+      document.removeEventListener("click", handleClickedOutside);
+    }
+    
+    // Empty dependency array to run the effect only once on mount and unmount
+  }, []);
+  
+  useEffect(() => {
+    function handleClickedOutside(e) {
+      if(hamDropDownRef.current && !hamDropDownRef.current.contains(e.target)) {
+        setShowHamburgerMenu(false);
       }
     }
 
@@ -23,6 +47,9 @@ function Nav() {
 
   function handleAgentToggle() {
     setShowDropdown(!showDropdown);
+  }
+  function handleHamburgerMenuToggle() {
+    setShowHamburgerMenu(!showHamburgerMenu);
   }
 
   return (
@@ -38,13 +65,12 @@ function Nav() {
             VALORANT
           </span>
         </a>
-        <button data-collapse-toggle="navbar-dropdown" type="button" aria-controls="navbar-dropdown"
+        <button ref={hamDropDownRef} onClick={handleHamburgerMenuToggle} data-collapse-toggle="navbar-dropdown" type="button" aria-controls="navbar-dropdown"
                 aria-expanded="false" className="inline-flex items-center justify-center w-10 h-10 p-2 text-sm
                 text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none
                 focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700
                 dark:focus:ring-gray-600"
         >
-          <span className="sr-only">Open main menu</span>
           <svg
             className="w-5 h-5"
             aria-hidden="true"
@@ -60,6 +86,10 @@ function Nav() {
               d="M1 1h15M1 7h15M1 13h15"
             />
           </svg>
+          {
+            // Change the span with the modal containing the menu
+            showHamburgerMenu && <span className="text-black">Open main menu</span>
+          }
         </button>
 
         <div className="hidden w-full md:block md:w-auto" id="navbar-dropdown">
