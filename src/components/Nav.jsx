@@ -126,6 +126,9 @@ function Nav() {
                 <a href="#" className="block py-1">
                   Agent 3
                 </a>
+                <a href="#" className="block py-1">
+                  Agent 4
+                </a>
               </div>
             </div>
             <span className="text-white">MAPS</span>
