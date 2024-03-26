@@ -29,8 +29,8 @@ const Hero = () => {
             world.
             <span id="more">
               You have 13 rounds to attack and defend your side using sharp
-              gunplay and tactical abilities. And, with one life per-round,
-              you'll need to think faster than your opponent if you want to
+              gunplay and tactical abilities. And, with one life per-round, you
+              will need to think faster than your opponent if you want to
               survive. Take on foes across Competitive and Unranked modes as
               well as Deathmatch and Spike Rush. The game combines precise
               gunplay with strategic agent abilities, creating an engaging and
