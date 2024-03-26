@@ -3,8 +3,8 @@ import Button from "@/components/Button";
 const Home = () => {
   return (
     <>
-      <div className="h-72 w-full text-center text-white bg-no-repeat bg-contain bg-hero-pattern font-valorant relaitve"></div>
-      <Button btnName="What Is Valorant" />
+      <div className="h-[11.25rem] w-full text-center text-white bg-no-repeat bg-contain bg-hero-pattern font-valorant relaitve"></div>
+      <Button btnName="Welcome to Valorant Wiki" />
     </>
   );
 };
