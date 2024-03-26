@@ -15,7 +15,7 @@ const Hero = () => {
   return (
     <>
       <div className="mt-20 bg-[#111111] text-white text-2xl py-5 text-center font-sans font-bold ">
-        <h1 className=" font-bold  text-transparent bg-clip-text bg-gradient-to-r from-lime-500 to-green-400">
+        <h1 className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-lime-300 to-green-400">
           WHAT IS <span className="font-valorant">VALORANT</span>
         </h1>
         <div className="px-5 mx-3 mt-3 text-[#dde4dd] text-start">

@@ -94,7 +94,7 @@ function Nav() {
           </svg>
         </button>
         {showHamburgerMenu && (
-          <div className=" bg-black bg-opacity-65 absolute right-0 flex flex-col w-40 gap-4 mt-3 pl-3 px-4 py-5 dark:bg-[#111111] rounded-lg shadow-md top-2 z-10">
+          <div className=" bg-black bg-opacity-65 absolute right-0 flex flex-col w-40 gap-4 pl-3 px-4 py-5 dark:bg-[#111111] rounded-lg shadow-md top-2 z-10">
             <span className="text-white ">HOME</span>
             <div className="relative group">
               <span className="flex text-white cursor-pointer">
