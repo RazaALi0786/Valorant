@@ -9,8 +9,9 @@ import { SiRiotgames } from "react-icons/si";
 const footer = () => {
   return (
     <>
-      <div className="text-center bg-[#292929] text-sm text-white font-mono py-6">
+      <div className="text-center bg-[#292929] text-sm text-white font-mono py-6 flex flex-col gap-1">
         <p>THANKS FOR VISITING</p>
+        <p>CHECKOUT OUR SOCIALS</p>
       </div>
       <div className="bg-[#111111] text-white py-5 cursor-pointer">
         <div className="flex items-center justify-center gap-5">
