@@ -55,7 +55,7 @@ function Nav() {
   }
 
   return (
-    <nav className="bg-white border-gray-200 dark:bg-[#111111] dark:border-gray-700 font-valorant">
+    <nav className="bg-[#695959] border-gray-200 dark:bg-[#111111] dark:border-gray-700 font-valorant">
       <div className="flex flex-wrap items-center justify-between max-w-screen-xl p-4 mx-auto">
         <a href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
           <img
@@ -94,7 +94,7 @@ function Nav() {
           </svg>
         </button>
         {showHamburgerMenu && (
-          <div className=" bg-slate-600 bg-transparent absolute right-0 flex flex-col w-40 gap-4 px-4 py-5 dark:bg-[#111111] rounded-lg shadow-md top-2 z-10">
+          <div className=" bg-black bg-opacity-65 absolute right-0 flex flex-col w-40 gap-4 mt-12 pl-3 px-4 py-5 dark:bg-[#111111] rounded-lg shadow-md top-2 z-10">
             <span className=" text-white">HOME</span>
             <div className="relative group">
               <span className="flex text-white cursor-pointer">
@@ -146,7 +146,7 @@ function Nav() {
             <li>
               <a
                 href="/"
-                className="block px-3 py-2 text-white bg-red-700 rounded md:bg-transparent md:hover:text-red-700 md:p-0 md:dark:hover:text-red-500 dark:bg-red-600 md:dark:bg-transparent"
+                className="block px-3 py-2 text-gray-900 bg-red-700 rounded md:bg-transparent md:hover:text-red-700 md:p-0 md:dark:hover:text-red-500 dark:bg-red-600 md:dark:bg-transparent"
                 aria-current="page"
               >
                 HOME
