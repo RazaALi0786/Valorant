@@ -1,15 +1,7 @@
 body {
-  background: #0f1923;
   font-family: "Muli";
 }
 
-div {
-  display: flex;
-  height: 100vh;
-  align-items: center;
-  justify-content: center;
-  flex-flow: column;
-}
 div a {
   width: 100%;
   max-width: 240px;
@@ -25,30 +17,39 @@ div a {
   position: relative;
   margin: 10px 0;
 }
-div a.white:hover > p {
+
+div a.white:hover>p {
   color: #ece8e1;
 }
-div a.white > p {
+
+div a.white>p {
   background: #ece8e1;
   color: #0f1923;
 }
-div a.white > p span.base {
+
+div a.white>p span.base {
   border: 1px solid transparent;
 }
-div a.transparent:hover > p {
+
+div a.transparent:hover>p {
   color: #ece8e1;
 }
-div a.transparent:hover > p span.text {
+
+div a.transparent:hover>p span.text {
   box-shadow: 0 0 0 1px #ece8e1;
 }
-div a.transparent > p {
+
+div a.transparent>p {
   background: #0f1923;
   color: #ece8e1;
 }
-div a.transparent > p span.base {
+
+div a.transparent>p span.base {
   border: 1px solid #ece8e1;
 }
-div a:after, div a:before {
+
+div a:after,
+div a:before {
   content: "";
   width: 1px;
   position: absolute;
@@ -58,10 +59,12 @@ div a:after, div a:before {
   top: 50%;
   transform: translateY(-50%);
 }
+
 div a:before {
   right: 0;
   left: initial;
 }
+
 div a p {
   margin: 0;
   height: 54px;
@@ -73,6 +76,7 @@ div a p {
   position: relative;
   overflow: hidden;
 }
+
 div a p span.base {
   box-sizing: border-box;
   position: absolute;
@@ -82,6 +86,7 @@ div a p span.base {
   left: 0;
   border: 1px solid #ff4655;
 }
+
 div a p span.base:before {
   content: "";
   width: 2px;
@@ -92,6 +97,7 @@ div a p span.base:before {
   position: absolute;
   transition: 0.3s ease-out all;
 }
+
 div a p span.bg {
   left: -5%;
   position: absolute;
@@ -102,6 +108,7 @@ div a p span.bg {
   transition: 0.3s ease-out all;
   transform: skewX(-10deg);
 }
+
 div a p span.text {
   z-index: 4;
   width: 100%;
@@ -110,6 +117,7 @@ div a p span.text {
   left: 0;
   top: 0;
 }
+
 div a p span.text:after {
   content: "";
   width: 4px;
@@ -121,12 +129,15 @@ div a p span.text:after {
   transition: 0.3s ease-out all;
   z-index: 5;
 }
+
 div a:hover {
   color: #ece8e1;
 }
+
 div a:hover span.bg {
   width: 110%;
 }
+
 div a:hover span.text:after {
   background: #ece8e1;
 }
