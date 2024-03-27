@@ -15,11 +15,11 @@ const Hero = () => {
   return (
     <>
       <div className="mt-20 bg-[#111111] text-white text-2xl py-5 text-center font-sans font-bold ">
-        <h1 className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-lime-300 to-green-400">
+        <h1 className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#ff4655] to-red-600">
           WHAT IS <span className="font-valorant">VALORANT</span>
         </h1>
         <div className="px-5 mx-3 mt-3 text-[#dde4dd] text-start">
-          <h2 className="mb-2 text-transparent bg-clip-text bg-gradient-to-r from-lime-200 to-green-400">
+          <h2 className="mb-2 text-transparent bg-clip-text bg-gradient-to-r from-[#ff4655] to-red-700">
             Introduction
           </h2>
           <p className="text-base">
@@ -39,10 +39,10 @@ const Hero = () => {
           </p>
           <button
             id="myBtn"
-            className="text-sm text-transparent bg-clip-text bg-gradient-to-r from-lime-300 to-green-400 hover:underline"
+            className="text-sm text-transparent bg-clip-text bg-gradient-to-l from-[#ff4655] to-red-700 decoration-yellow-500/50 hover:underline"
             onClick={toggleReadMore}
           >
-            Read More...
+            Read Less...
           </button>
         </div>
       </div>
