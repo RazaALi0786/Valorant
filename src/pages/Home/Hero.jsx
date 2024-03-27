@@ -1,5 +1,3 @@
-
-
 const Hero = () => {
   const toggleReadMore = () => {
     const moreText = document.getElementById("more");
@@ -16,8 +14,8 @@ const Hero = () => {
 
   return (
     <>
-      <div className="sm:mt-20 mt-[11rem] bg-[rgb(17,17,17)] text-white text-2xl py-5 text-center font-sans font-bold ">
-        <h1 className=" font-bold text-transparent dark:text-white bg-clip-text bg-gradient-to-r from-red-500 to-red-800 ">
+      <div className="sm:mt-20 mt-[5.25rem] bg-[rgb(17,17,17)] text-white text-2xl py-5 text-center font-sans font-bold ">
+        <h1 className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-red-800">
           WHAT IS <span className="font-valorant">VALORANT</span>
         </h1>
         <div className="px-5 mx-3 mt-3 text-[#dde4dd] text-start">
@@ -46,9 +44,17 @@ const Hero = () => {
           >
             Read Less...
           </button>
-          <div className="sm:flex sm:flex-wrap">
-            <img className="sm:w-1/2" src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExczVsY3M2cGZjb2N1YXhxdDUyamEya21zNncwNGt0ZDN6MTRxbDdwNiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/IvOFcGZeDA76P6XryO/giphy.gif" alt="valogif1" />
-            <img className="sm:w-1/2 w-full" src="https://media3.giphy.com/media/uLsim1UsMiGKQ28hri/200.webp?cid=ecf05e47jfigmk66pu2xj9n0i3fctx5o4obatfmnnvt6rlli&ep=v1_gifs_search&rid=200.webp&ct=g" alt="valogif2" />
+          <div className="flex flex-col gap-2 mt-5 sm:flex-wrap">
+            <img
+              className="sm:w-1/2"
+              src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExczVsY3M2cGZjb2N1YXhxdDUyamEya21zNncwNGt0ZDN6MTRxbDdwNiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/IvOFcGZeDA76P6XryO/giphy.gif"
+              alt="valogif1"
+            />
+            <img
+              className="w-full sm:w-1/2"
+              src="https://media3.giphy.com/media/uLsim1UsMiGKQ28hri/200.webp?cid=ecf05e47jfigmk66pu2xj9n0i3fctx5o4obatfmnnvt6rlli&ep=v1_gifs_search&rid=200.webp&ct=g"
+              alt="valogif2"
+            />
           </div>
         </div>
       </div>
