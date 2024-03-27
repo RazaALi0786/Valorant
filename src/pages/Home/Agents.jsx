@@ -1,3 +1,6 @@
+
+
+
 const Agents = () => {
   const toggleContent = () => {
     const moreText = document.getElementById("moreText");
@@ -46,8 +49,17 @@ const Agents = () => {
           >
             Read less...
           </button>
+
         </div>
+        
+       <div className="mt-3 sm:mt-6">
+       <button className="font-mono font-bold transform -translate-x-1/2 top-52 bg-[#ff4655] p-1 cursor-pointer aboslute left-1/2 hover:bg-[#111111] border-b-4 border-red-800 hover:border-gray-800 rounded text-white ">
+      Explore...
+      </button>
+       </div>
+      
       </div>
+
     </>
   );
 };
