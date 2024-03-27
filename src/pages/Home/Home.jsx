@@ -2,7 +2,7 @@ import Button from "@/components/Button";
 import BG_IMG from "@/assets/images/valorant.png";
 import Hero from "./Hero";
 import Agents from "./Agents";
-
+import Maps from "./Maps";
 const Home = () => {
   return (
     <>
@@ -13,8 +13,9 @@ const Home = () => {
         <img src={BG_IMG} alt="bg-img" />
         <Button btnName="Welcome to ValPal" />
       </div>
-      <Hero/>
-      <Agents/>
+      <Hero />
+      <Agents />
+      <Maps />
     </>
   );
 };
