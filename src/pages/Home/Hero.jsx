@@ -1,15 +1,10 @@
-const Hero = () => {
-  const toggleReadMore = () => {
-    const moreText = document.getElementById("more");
-    const btnText = document.getElementById("myBtn");
+import { useState } from "react";
 
-    if (moreText.style.display === "none") {
-      moreText.style.display = "inline";
-      btnText.innerHTML = "Read less...";
-    } else {
-      moreText.style.display = "none";
-      btnText.innerHTML = "Read more...";
-    }
+const Hero = () => {
+  const [showMore, setShowMore] = useState(false);
+
+  const toggleContent = () => {
+    setShowMore(!showMore);
   };
 
   return (
@@ -27,22 +22,24 @@ const Hero = () => {
             the near future. Players take on the roles of Agents, each with
             unique abilities based on various countries and cultures around the
             world.
-            <span id="more">
-              You have 13 rounds to attack and defend your side using sharp
-              gunplay and tactical abilities. And, with one life per-round, you
-              will need to think faster than your opponent if you want to
-              survive. Take on foes across Competitive and Unranked modes as
-              well as Deathmatch and Spike Rush. The game combines precise
-              gunplay with strategic agent abilities, creating an engaging and
-              competitive experience.
-            </span>
+            <br />
+            {showMore && (
+              <span id="more">
+                You have 13 rounds to attack and defend your side using sharp
+                gunplay and tactical abilities. And, with one life per-round,
+                you will need to think faster than your opponent if you want to
+                survive. Take on foes across Competitive and Unranked modes as
+                well as Deathmatch and Spike Rush. The game combines precise
+                gunplay with strategic agent abilities, creating an engaging and
+                competitive experience.
+              </span>
+            )}
           </p>
           <button
-            id="myBtn"
-            className="text-sm text-transparent bg-clip-text bg-gradient-to-l from-[#ff4655] to-red-700 decoration-yellow-500/50 hover:underline"
-            onClick={toggleReadMore}
+            onClick={toggleContent}
+            className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-red-800 hover:underline focus:outline-none"
           >
-            Read Less...
+            {showMore ? "Read less..." : "Read more..."}
           </button>
           <div className="flex flex-col gap-2 mt-5 sm:flex-wrap">
             <img
