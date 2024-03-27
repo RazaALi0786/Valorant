@@ -1,7 +1,10 @@
+import { useState } from "react";
+
 const Agents = () => {
+  const [showMore, setShowMore] = useState(false);
+
   const toggleContent = () => {
-    const moreText = document.getElementById("moreText");
-    moreText.classList.toggle("hidden");
+    setShowMore(!showMore);
   };
 
   return (
@@ -17,34 +20,35 @@ const Agents = () => {
               GREATEST WEAPON!
             </span>
           </h3>
-          <p className="mt-3 font-sans text-base font-normal ">
+          <p className="mt-3 font-sans text-base font-normal">
             More than guns and bullets, you’ll choose an Agent armed with
             adaptive, swift, and lethal abilities that create opportunities to
             let your gunplay shine. No two Agents play alike, just as no two
             highlight reels will look the same.
             <br />
-            <ol id="moreText" className="ml-4 list-disc ">
-              <li>
-                {" "}
-                Valorant features a diverse cast of characters known as Agents.
-              </li>
-              <li>
-                {" "}
-                Each Agent has a unique set of abilities that can be used
-                strategically during matches
-              </li>
-              <li>
-                {" "}
-                Explore the abilities of different Agents to find your playstyle
-                and contribute to your team success.
-              </li>
-            </ol>
+            {showMore && (
+              <ol className="ml-4 list-disc">
+                <li>
+                  Valorant features a diverse cast of characters known as
+                  Agents.
+                </li>
+                <li>
+                  Each Agent has a unique set of abilities that can be used
+                  strategically during matches.
+                </li>
+                <li>
+                  Explore the abilities of different Agents to find your
+                  playstyle and contribute to your teams success.
+                </li>
+              </ol>
+            )}
           </p>
+
           <button
             onClick={toggleContent}
             className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-orange-500 hover:underline focus:outline-none"
           >
-            Read less...
+            {showMore ? "Read Less..." : "Read More..."}
           </button>
         </div>
 
