@@ -14,15 +14,15 @@ const Hero = () => {
 
   return (
     <>
-      <div className="mt-20 bg-[#111111] text-white text-2xl py-5 text-center font-sans font-bold ">
-        <h1 className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#ff4655] to-red-600">
+      <div className="mt-20 bg-[rgb(17,17,17)] text-white text-2xl py-5 text-center font-sans font-bold ">
+        <h1 className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-red-800">
           WHAT IS <span className="font-valorant">VALORANT</span>
         </h1>
         <div className="px-5 mx-3 mt-3 text-[#dde4dd] text-start">
-          <h2 className="mb-2 text-transparent bg-clip-text bg-gradient-to-r from-[#ff4655] to-red-700">
+          <h2 className="mb-2 text-transparent bg-clip-text bg-gradient-to-l from-red-400 to-red-600 ">
             Introduction
           </h2>
-          <p className="text-base">
+          <p className="text-base ">
             Valorant is a team-based first-person tactical hero shooter set in
             the near future. Players take on the roles of Agents, each with
             unique abilities based on various countries and cultures around the
