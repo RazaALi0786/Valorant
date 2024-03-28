@@ -3,6 +3,7 @@ import BG_IMG from "@/assets/images/valorant.png";
 import Hero from "./Hero";
 import Agents from "./Agents";
 import Maps from "./Maps";
+import Guns from "./Guns";
 const Home = () => {
   return (
     <>
@@ -16,6 +17,7 @@ const Home = () => {
       <Hero />
       <Agents />
       <Maps />
+      <Guns />
     </>
   );
 };

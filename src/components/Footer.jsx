@@ -15,19 +15,34 @@ const footer = () => {
       </div>
       <div className="bg-[#111111] text-white py-5 cursor-pointer">
         <div className="flex items-center justify-center gap-5">
-          <button className="bg-[#292929] p-[6px] rounded-lg" title="Twitter">
+          <button
+            className="bg-[#292929] p-[6px] rounded-lg hover:drop-shadow-[0_1.2px_1.2px_rgba(0,78,255,15)]"
+            title="Twitter"
+          >
             <FaTwitter />
           </button>
-          <button className="bg-[#292929] p-[6px] rounded-lg " title="Youtube">
+          <button
+            className="bg-[#292929] p-[6px] rounded-lg hover:drop-shadow-[0_1.2px_1.2px_rgba(225,6,0,15)] "
+            title="Youtube"
+          >
             <FaYoutube />
           </button>
-          <button className="bg-[#292929] p-[6px] rounded-lg" title="Instagram">
+          <button
+            className="bg-[#292929] p-[6px] rounded-lg hover:drop-shadow-[0_1.2px_1.2px_rgba(225,92,204,15)]"
+            title="Instagram"
+          >
             <FiInstagram />
           </button>
-          <button className="bg-[#292929] p-[6px] rounded-lg" title="Linkedin">
+          <button
+            className="bg-[#292929] p-[6px] rounded-lg hover:drop-shadow-[0_1.2px_1.2px_rgba(225,165,0,15)]"
+            title="Linkedin"
+          >
             <FaLinkedin />
           </button>
-          <button className="bg-[#292929] p-[6px] rounded-lg" title="Discord">
+          <button
+            className="bg-[#292929] p-[6px] rounded-lg hover:drop-shadow-[0_1.2px_1.2px_rgba(170,219,30,15)]"
+            title="Discord"
+          >
             <FaDiscord />
           </button>
         </div>
