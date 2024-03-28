@@ -1,4 +1,3 @@
-
 import { useEffect, useRef, useState } from "react";
 
 function Nav() {
@@ -55,7 +54,7 @@ function Nav() {
 
   return (
     <nav className="bg-[#695959] border-gray-200 dark:bg-[#111111] dark:border-gray-700 font-valorant">
-      <div className="flex flex-wrap items-center justify-between max-w-screen-xl p-4 mx-auto">
+      <div className="flex flex-wrap items-center justify-between max-w-screen-xl p-4 mx-auto md:py-8 md:text-xl">
         <a href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
           <img
             src="/src/assets/images/Valorant-aPVsZquE_brandlogos.net.svg"
@@ -140,12 +139,12 @@ function Nav() {
           <ul
             className="flex flex-col p-4 mt-4 font-medium border border-gray-100 rounded-lg md:p-0 bg-gray-50
           md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-[#111111]
-          md:dark:bg-[#111111] dark:border-gray-700"
+          md:dark:bg-[#111111] dark:border-gray-700 md:ml-5"
           >
             <li>
               <a
                 href="/"
-                className="block px-3 py-2 text-gray-900 bg-red-700 rounded md:bg-transparent md:hover:text-red-700 md:p-0 md:dark:hover:text-red-500 dark:bg-red-600 md:dark:bg-transparent"
+                className="block px-3 py-2 text-white bg-red-700 rounded md:bg-transparent md:hover:text-red-700 md:p-0 md:dark:hover:text-red-500 dark:bg-red-600 md:dark:bg-transparent"
                 aria-current="page"
               >
                 HOME

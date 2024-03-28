@@ -14,13 +14,13 @@ const Guns = () => {
           YOUR GUNS
         </h1>
         <div className="px-3 mx-3 mt-3 font-mono text-base text-start drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
-          <h3 className="text-lg font-extrabold text-transparent text-balance bg-clip-text bg-gradient-to-l from-white to-gray-200">
+          <h3 className="text-lg font-extrabold text-transparent md:text-center text-balance bg-clip-text bg-gradient-to-l md:text-3xl from-white to-gray-200">
             CALIBRATED CARNAGE{" "}
-            <span className="ml-16 text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500 decoration-white/40 hover:underline">
+            <span className="ml-16 text-transparent md:ml-0 bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500 decoration-white/40 hover:underline">
               PRECISIOIN UNLEASHED
             </span>
           </h3>
-          <p className="mt-3 font-sans text-base font-normal">
+          <p className="mt-3 font-sans text-base font-normal md:text-2xl">
             In Valorant, a tactical first-person shooter game, the choice of
             weaponry plays a crucial role in determining your effectiveness on
             the battlefield. Here’s a brief overview of the guns available in
@@ -28,8 +28,8 @@ const Guns = () => {
             <br />
           </p>
           {showMore && (
-            <ol className="mt-3 ml-4 font-sans text-base font-normal list-disc">
-              <h4 className="text-lg text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500 ">
+            <ol className="mt-3 ml-4 font-sans text-base font-normal list-disc md:text-2xl">
+              <h4 className="text-lg text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500 md:text-2xl ">
                 1. Assault Rifle:
               </h4>
               <ul>
@@ -43,7 +43,7 @@ const Guns = () => {
                   reset.
                 </li>
               </ul>
-              <h4 className="text-lg text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">
+              <h4 className="text-lg text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500 md:text-2xl">
                 2. Heavy Machine Gun:
               </h4>
               <ul>
@@ -60,13 +60,13 @@ const Guns = () => {
           )}
           <button
             onClick={toggleContent}
-            className="text-transparent bg-clip-text bg-gradient-to-l from-cyan-400 to-blue-500 hover:underline focus:outline-none"
+            className="text-transparent md:text-2xl bg-clip-text bg-gradient-to-l from-cyan-400 to-blue-500 hover:underline focus:outline-none"
           >
             {showMore ? "Read less..." : "Read more..."}
           </button>
         </div>
         <div className="mt-3 sm:mt-6">
-          <button className="font-mono font-bold transform -translate-x-1/2 top-52 bg-[#ff4655] px-1 text-base cursor-pointer aboslute left-1/2 hover:bg-[#191717] border-b-4 border-red-800 hover:border-cyan-400 rounded text-white ml-32">
+          <button className="font-mono font-bold transform -translate-x-1/2 top-52 bg-[#ff4655] px-1 text-base cursor-pointer aboslute left-1/2 hover:bg-[#191717] border-b-4 border-red-800 hover:border-cyan-400 rounded text-white ml-32 md:px-4 md:py-3 md:text-2xl">
             Explore GUNS
           </button>
         </div>

@@ -10,7 +10,7 @@ const footer = () => {
   return (
     <>
       <div className="text-center bg-[#292929] text-sm text-white font-mono py-6 flex flex-col gap-1 ">
-        <div className="text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-purple-500">
+        <div className="text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-purple-500 md:text-2xl">
           <p>THANKS FOR VISITING</p>
           <p>CHECKOUT OUR SOCIALS</p>
         </div>
