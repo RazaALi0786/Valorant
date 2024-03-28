@@ -9,7 +9,7 @@ const Hero = () => {
 
   return (
     <>
-      <div className="sm:mt-20 mt-[5.25rem] bg-[rgb(17,17,17)] text-white text-2xl py-5 text-center font-sans font-bold ">
+      <div className="sm:mt-20 md:mt-0 mt-[5.25rem] bg-[rgb(17,17,17)] text-white text-2xl py-5 text-center font-sans font-bold ">
         <h1 className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-red-800">
           WHAT IS <span className="font-valorant">VALORANT</span>
         </h1>
@@ -41,7 +41,7 @@ const Hero = () => {
           >
             {showMore ? "Read less..." : "Read more..."}
           </button>
-          <div className="flex flex-col gap-2 mt-5 sm:flex-wrap">
+          <div className="flex flex-col gap-2 mt-5 md:flex-row">
             <img
               className="sm:w-1/2"
               src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExczVsY3M2cGZjb2N1YXhxdDUyamEya21zNncwNGt0ZDN6MTRxbDdwNiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/IvOFcGZeDA76P6XryO/giphy.gif"
