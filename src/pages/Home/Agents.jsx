@@ -26,23 +26,22 @@ const Agents = () => {
             let your gunplay shine. No two Agents play alike, just as no two
             highlight reels will look the same.
             <br />
-            {showMore && (
-              <ol className="ml-4 list-disc">
-                <li>
-                  Valorant features a diverse cast of characters known as
-                  Agents.
-                </li>
-                <li>
-                  Each Agent has a unique set of abilities that can be used
-                  strategically during matches.
-                </li>
-                <li>
-                  Explore the abilities of different Agents to find your
-                  playstyle and contribute to your teams success.
-                </li>
-              </ol>
-            )}
           </p>
+          {showMore && (
+            <ol className="mt-3 ml-4 font-sans text-base font-normal list-disc">
+              <li>
+                Valorant features a diverse cast of characters known as Agents.
+              </li>
+              <li>
+                Each Agent has a unique set of abilities that can be used
+                strategically during matches.
+              </li>
+              <li>
+                Explore the abilities of different Agents to find your playstyle
+                and contribute to your teams success.
+              </li>
+            </ol>
+          )}
 
           <button
             onClick={toggleContent}

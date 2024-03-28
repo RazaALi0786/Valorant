@@ -11,7 +11,11 @@ const Home = () => {
         className="h-24 w-full text-center  text-white bg-no-repeat bg-contain font-valorant relaitve md:h-[63vh] md:w-[100vw]
       lg:h-[100vh] lg:w-[100vw]"
       >
-        <img src={BG_IMG} alt="bg-img" />
+        <img
+          src={BG_IMG}
+          alt="bg-img"
+          className="object-cover w-full h-[11.25rem]"
+        />
         <Button btnName="Welcome to ValPal" />
       </div>
       <Hero />

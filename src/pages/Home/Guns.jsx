@@ -26,38 +26,38 @@ const Guns = () => {
             the battlefield. Here’s a brief overview of the guns available in
             the game:
             <br />
-            {showMore && (
-              <ol className="ml-4 list-disc">
-                <h4 className="text-lg text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500 ">
-                  1. Assault Rifle:
-                </h4>
-                <li>
-                  {" "}
-                  <li>Cost: ¤ 2,900</li>
-                  <li>Magazine: 25 / 75</li>
-                  <li>Wall Penetration: Medium</li>
-                  <li>
-                    Versatile and effective at all ranges. It can one-shot to
-                    the head and is best used with tap firing due to its quick
-                    spray reset.
-                  </li>
-                </li>
-                <h4 className="text-lg text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-500">
-                  2. Heavy Machine Gun:
-                </h4>
-                <li>
-                  {" "}
-                  <li>Cost: ¤3,200</li>
-                  <li>Magazine: 100 / 200</li>
-                  <li>Wall Penetration: High</li>
-                  <li>
-                    A suppressive fire weapon, useful for suppressing enemies
-                    and breaking through walls.
-                  </li>
-                </li>
-              </ol>
-            )}
           </p>
+          {showMore && (
+            <ol className="mt-3 ml-4 font-sans text-base font-normal list-disc">
+              <h4 className="text-lg text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500 ">
+                1. Assault Rifle:
+              </h4>
+              <ul>
+                {" "}
+                <li>Cost: ¤ 2,900</li>
+                <li>Magazine: 25 / 75</li>
+                <li>Wall Penetration: Medium</li>
+                <li>
+                  Versatile and effective at all ranges. It can one-shot to the
+                  head and is best used with tap firing due to its quick spray
+                  reset.
+                </li>
+              </ul>
+              <h4 className="text-lg text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">
+                2. Heavy Machine Gun:
+              </h4>
+              <ul>
+                {" "}
+                <li>Cost: ¤3,200</li>
+                <li>Magazine: 100 / 200</li>
+                <li>Wall Penetration: High</li>
+                <li>
+                  A suppressive fire weapon, useful for suppressing enemies and
+                  breaking through walls.
+                </li>
+              </ul>
+            </ol>
+          )}
           <button
             onClick={toggleContent}
             className="text-transparent bg-clip-text bg-gradient-to-l from-cyan-400 to-blue-500 hover:underline focus:outline-none"

@@ -25,21 +25,21 @@ const Maps = () => {
             Purpose-built for team strategies, spectacular plays, and clutch
             moments. Make the play others will imitate for years to come.
             <br />
-            {showMore && (
-              <ol className="ml-4 list-disc">
-                <li>
-                  {" "}
-                  Valorant offers several maps, each with distinct layouts and
-                  strategic elements.
-                </li>
-                <li>
-                  {" "}
-                  Learn the callouts, common angles, and map control strategies
-                  for optimal performance.
-                </li>
-              </ol>
-            )}
           </p>
+          {showMore && (
+            <ol className="ml-4 list-disc mt-3 font-sans text-base font-normal">
+              <li>
+                {" "}
+                Valorant offers several maps, each with distinct layouts and
+                strategic elements.
+              </li>
+              <li>
+                {" "}
+                Learn the callouts, common angles, and map control strategies
+                for optimal performance.
+              </li>
+            </ol>
+          )}
           <button
             onClick={toggleContent}
             className="text-transparent bg-clip-text bg-gradient-to-l from-lime-400 to-green-500 hover:underline focus:outline-none"
