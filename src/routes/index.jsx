@@ -2,9 +2,9 @@ import { createBrowserRouter } from "react-router-dom";
 
 import Home from "../pages/Home/Home";
 import About from "../pages/About/About";
-import Guns from "../pages/Home/Guns";
+import Guns from "../pages/Guns/Guns";
 import Maps from "../pages/Maps/Maps";
-import Agents from "../pages/Home/Agents";
+import Agents from "../pages/Agents/Agents";
 import Layout from "../Layout";
 import ErrorPage from "../components/ErrorPage";
 
