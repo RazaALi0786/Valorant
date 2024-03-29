@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Guns = () => {
   const [showMore, setShowMore] = useState(false);
@@ -65,11 +66,11 @@ const Guns = () => {
             {showMore ? "Read less..." : "Read more..."}
           </button>
         </div>
-        <div className="mt-3 sm:mt-6">
+        <Link to={'/guns'} className="mt-3 sm:mt-6">
           <button className="font-mono font-bold transform -translate-x-1/2 top-52 bg-[#ff4655] px-1 text-base cursor-pointer aboslute left-1/2 hover:bg-[#191717] border-b-4 border-red-800 hover:border-cyan-400 rounded text-white ml-32 md:px-4 md:py-3 md:text-2xl">
             Explore GUNS
           </button>
-        </div>
+        </Link>
       </div>
     </>
   );

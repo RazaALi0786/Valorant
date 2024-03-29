@@ -6,6 +6,7 @@ import Guns from "../pages/Home/Guns";
 import Maps from "../pages/Maps/Maps";
 import Agents from "../pages/Home/Agents";
 import Layout from "../Layout";
+import ErrorPage from "../components/ErrorPage";
 
 const router = createBrowserRouter([
   {
@@ -31,8 +32,13 @@ const router = createBrowserRouter([
         path:"agents",
         element:<Agents/>
       },
+     
     ]
   },
+  {
+    path:"*",
+    element:<ErrorPage/>
+ },
   
 ]);
 
