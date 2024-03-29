@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import Logo from "/src/assets/images/Valorant-aPVsZquE_brandlogos.net.svg";
+import { NavLink } from "react-router-dom";
 function Nav() {
   // State for the dropdown menu
   const [showDropdown, setShowDropdown] = useState(false);
@@ -89,9 +90,9 @@ function Nav() {
         </button>
         {showHamburgerMenu && (
           <div className="  bg-opacity-65 absolute right-0 flex flex-col w-40 gap-4 pl-3 px-4 py-5 bg-[#111111] rounded-lg shadow-md top-2 z-10">
-            <span className="text-white ">HOME</span>
+            <NavLink to={'/'} className="text-white ">HOME</NavLink>
             <div className="relative group">
-              <span className="flex text-white cursor-pointer">
+              <NavLink to={'/agents'} className="flex text-white cursor-pointer">
                 AGENTS{" "}
                 <svg
                   className="w-2.5 h-4 ms-2.5"
@@ -108,7 +109,7 @@ function Nav() {
                     d="m1 1 4 4 4-4"
                   />
                 </svg>
-              </span>
+              </NavLink>
               <div className="absolute hidden px-2 py-1 text-white bg-[#111111] rounded-lg shadow-md group-hover:block">
                 {/* Add your agent options here */}
                 <a href="#" className="block py-1">
@@ -125,9 +126,9 @@ function Nav() {
                 </a>
               </div>
             </div>
-            <span className="text-white">MAPS</span>
-            <span className="text-white">GUNS</span>
-            <span className="text-white">ABOUT US</span>
+            <NavLink to={'/maps'} className="text-white">MAPS</NavLink>
+            <NavLink to={'guns'} className="text-white">GUNS</NavLink>
+            <NavLink to={'/about'} className="text-white" >ABOUT US</NavLink>
           </div>
         )}
 
@@ -147,7 +148,7 @@ function Nav() {
               </a>
             </li>
             <li className="relative" ref={dropDownRef}>
-              <button
+              <NavLink to={'/agents'}
                 onClick={handleAgentToggle}
                 id="dropdownNavbarLink"
                 data-dropdown-toggle="dropdownNavbar"
@@ -169,7 +170,7 @@ function Nav() {
                     d="m1 1 4 4 4-4"
                   />
                 </svg>
-              </button>
+              </NavLink>
 
               {showDropdown && (
                 <div
@@ -217,28 +218,26 @@ function Nav() {
               )}
             </li>
             <li>
-              <a
-                href="#"
+              <NavLink to={'/maps'}
                 className="block px-3 py-2 text-white rounded md:border-0 md:p-0 md:hover:text-red-500 hover:bg-gray-700 hover:text-white md:hover:bg-transparent"
               >
                 MAPS
-              </a>
+              </NavLink>
             </li>
             <li>
-              <a
-                href="#"
+              <NavLink to={'/guns'}
                 className="block px-3 py-2 text-white rounded md:border-0 md:p-0 md:hover:text-red-500 hover:bg-gray-700 hover:text-white md:hover:bg-transparent"
               >
                 GUNS
-              </a>
+              </NavLink>
             </li>
             <li>
-              <a
-                href="/about"
+              <NavLink to={'/about'}
+              
                 className="block px-3 py-2 text-white rounded md:border-0 md:p-0 md:hover:text-red-500 hover:bg-gray-700 hover:text-white md:hover:bg-transparent"
               >
                 ABOUT US
-              </a>
+              </NavLink>
             </li>
           </ul>
         </div>
