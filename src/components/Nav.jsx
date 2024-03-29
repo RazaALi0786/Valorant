@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-
+import Logo from "/src/assets/images/Valorant-aPVsZquE_brandlogos.net.svg";
 function Nav() {
   // State for the dropdown menu
   const [showDropdown, setShowDropdown] = useState(false);
@@ -53,15 +53,11 @@ function Nav() {
   }
 
   return (
-    <nav className="bg-[#695959] border-gray-200 dark:bg-[#111111] dark:border-gray-700 font-valorant">
+    <nav className=" bg-[#111111] border-gray-700 font-valorant">
       <div className="flex flex-wrap items-center justify-between max-w-screen-xl p-4 mx-auto md:py-8 md:text-xl">
         <a href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
-          <img
-            src="/src/assets/images/Valorant-aPVsZquE_brandlogos.net.svg"
-            className="h-8 text-white"
-            alt="Valorant Logo"
-          />
-          <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-red-500">
+          <img src={Logo} className="h-8 text-white" alt="Valorant Logo" />
+          <span className="self-center text-2xl font-semibold text-red-500 whitespace-nowrap">
             VALORANT
           </span>
         </a>
@@ -73,7 +69,7 @@ function Nav() {
           aria-controls="navbar-dropdown"
           aria-expanded={showHamburgerMenu ? "true" : "false"}
           title="Toggle main menu"
-          className="inline-flex items-center justify-center w-10 h-10 p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          className="inline-flex items-center justify-center w-10 h-10 p-2 text-sm text-gray-400 rounded-lg md:hidden focus:outline-none focus:ring-2 hover:bg-gray-700 focus:ring-gray-600"
         >
           <svg
             className="w-5 h-5"
@@ -92,7 +88,7 @@ function Nav() {
           </svg>
         </button>
         {showHamburgerMenu && (
-          <div className=" bg-black bg-opacity-65 absolute right-0 flex flex-col w-40 gap-4 pl-3 px-4 py-5 dark:bg-[#111111] rounded-lg shadow-md top-2 z-10">
+          <div className="  bg-opacity-65 absolute right-0 flex flex-col w-40 gap-4 pl-3 px-4 py-5 bg-[#111111] rounded-lg shadow-md top-2 z-10">
             <span className="text-white ">HOME</span>
             <div className="relative group">
               <span className="flex text-white cursor-pointer">
@@ -137,14 +133,14 @@ function Nav() {
 
         <div className="hidden w-full md:block md:w-auto" id="navbar-dropdown">
           <ul
-            className="flex flex-col p-4 mt-4 font-medium border border-gray-100 rounded-lg md:p-0 bg-gray-50
-          md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-[#111111]
-          md:dark:bg-[#111111] dark:border-gray-700 md:ml-5"
+            className="flex flex-col p-4 mt-4 font-medium border  rounded-lg md:p-0 
+          md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0  bg-[#111111]
+          md:bg-[#111111] border-gray-700 md:ml-5"
           >
             <li>
               <a
                 href="/"
-                className="block px-3 py-2 text-white bg-red-700 rounded md:bg-transparent md:hover:text-red-700 md:p-0 md:dark:hover:text-red-500 dark:bg-red-600 md:dark:bg-transparent"
+                className="block px-3 py-2 text-white bg-red-600 rounded md:bg-transparent md:p-0 md:hover:text-red-500"
                 aria-current="page"
               >
                 HOME
@@ -155,7 +151,7 @@ function Nav() {
                 onClick={handleAgentToggle}
                 id="dropdownNavbarLink"
                 data-dropdown-toggle="dropdownNavbar"
-                className="flex items-center justify-between w-full px-3 py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-700 md:p-0 md:w-auto dark:text-white md:dark:hover:text-red-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent"
+                className="flex items-center justify-between w-full px-3 py-2 text-white border-gray-700 rounded md:hover:bg-transparent md:border-0 md:p-0 md:w-auto md:hover:text-red-500 focus:text-white hover:bg-gray-700"
               >
                 AGENTS{" "}
                 <svg
@@ -178,16 +174,16 @@ function Nav() {
               {showDropdown && (
                 <div
                   id="dropdownNavbar"
-                  className="absolute z-10 font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600"
+                  className="absolute z-10 font-normal bg-[#111111] divide-y divide-gray-600 rounded-lg shadow w-44"
                 >
                   <ul
-                    className="py-2 text-sm text-gray-700 dark:text-gray-400"
+                    className="py-2 text-sm text-gray-400"
                     aria-labelledby="dropdownLargeButton"
                   >
                     <li>
                       <a
                         href="#"
-                        className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                        className="block px-4 py-2 hover:bg-gray-600 hover:text-white"
                       >
                         Dashboard
                       </a>
@@ -195,7 +191,7 @@ function Nav() {
                     <li>
                       <a
                         href="#"
-                        className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                        className="block px-4 py-2 hover:bg-gray-600 hover:text-white"
                       >
                         Settings
                       </a>
@@ -203,7 +199,7 @@ function Nav() {
                     <li>
                       <a
                         href="#"
-                        className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                        className="block px-4 py-2 hover:bg-gray-600 hover:text-white"
                       >
                         Earnings
                       </a>
@@ -212,7 +208,7 @@ function Nav() {
                   <div className="py-1">
                     <a
                       href="#"
-                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
+                      className="block px-4 py-2 text-sm text-gray-200 hover:bg-gray-600 hover:text-white"
                     >
                       Sign out
                     </a>
@@ -223,7 +219,7 @@ function Nav() {
             <li>
               <a
                 href="#"
-                className="block px-3 py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-700 md:p-0 dark:text-white md:dark:hover:text-red-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                className="block px-3 py-2 text-white rounded md:border-0 md:p-0 md:hover:text-red-500 hover:bg-gray-700 hover:text-white md:hover:bg-transparent"
               >
                 MAPS
               </a>
@@ -231,7 +227,7 @@ function Nav() {
             <li>
               <a
                 href="#"
-                className="block px-3 py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-700 md:p-0 dark:text-white md:dark:hover:text-red-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                className="block px-3 py-2 text-white rounded md:border-0 md:p-0 md:hover:text-red-500 hover:bg-gray-700 hover:text-white md:hover:bg-transparent"
               >
                 GUNS
               </a>
@@ -239,7 +235,7 @@ function Nav() {
             <li>
               <a
                 href="/about"
-                className="block px-3 py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-700 md:p-0 dark:text-white md:dark:hover:text-red-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                className="block px-3 py-2 text-white rounded md:border-0 md:p-0 md:hover:text-red-500 hover:bg-gray-700 hover:text-white md:hover:bg-transparent"
               >
                 ABOUT US
               </a>

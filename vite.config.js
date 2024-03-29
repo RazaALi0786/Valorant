@@ -4,9 +4,6 @@ import { fileURLToPath, URL } from "url";
 
 export default defineConfig({
   plugins: [react()],
-  build: {
-    outDir: "/var/www/html",
-  },
   server: {
     port: 3002,
   },
