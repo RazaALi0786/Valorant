@@ -3,13 +3,16 @@ import AgentsCard from "../../components/AgentsCard";
 
 const Agents = () => {
   const [agents, setAgents] = useState([]);
+  const [dataItem,setDataItem]=useState(agents);
 
-  const filterItem = (categItem) => {
-    const updatedItem = agents.filter((currEle) => {
-      return currEle.role?.displayName === categItem;
-    });
-    setAgents(updatedItem);
-  };
+
+  const filterItem=(categItem)=>{
+      const updatedItem=agents.filter((currEle)=>{
+            return currEle.role?.displayName===categItem;
+      });
+      setDataItem(updatedItem);
+    
+  }
 
   const fetchData = async () => {
     try {
@@ -22,6 +25,7 @@ const Agents = () => {
         (agent) => agent.isPlayableCharacter
       );
       setAgents(playableAgent);
+      setDataItem(playableAgent)
     } catch (error) {
       // use react hot toast or any other notification library to show error
       console.log("There was a problem fetching the data:", error);
@@ -32,44 +36,28 @@ const Agents = () => {
     fetchData();
   }, []);
 
-  console.log(agents);
+  console.log(dataItem)
 
-  if (agents.length === 0) {
+  if (dataItem.length === 0) {
     // Make a loading screen and use it here.
-    return <div></div>;
+    return <div>
+        
+    </div>;
   }
 
   return (
     <>
-      <div className="flex flex-col justify-around pt-2 text-white bg-black md:flex-row">
-        <button
-          onClick={() => filterItem("Initiator")}
-          className="focus:outline-none text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 md:mb-0 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900"
-        >
-          Initiator
-        </button>
-        <button
-          onClick={() => filterItem("Sentinel")}
-          className="focus:outline-none text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 md:mb-0 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900"
-        >
-          Sentinel
-        </button>
-        <button
-          onClick={() => filterItem("Duelist")}
-          className="focus:outline-none text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 md:mb-0 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900"
-        >
-          Duelist
-        </button>
-        <button
-          onClick={() => filterItem("Controller")}
-          className="focus:outline-none text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 md:mb-0 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900"
-        >
-          Controller
-        </button>
-      </div>
+    <div className="pt-2 flex justify-around bg-black text-white">
+      <button onClick={()=>filterItem('Initiator')} className="focus:outline-none text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900">Initiator</button>
+      <button onClick={()=>filterItem('Sentinel')} className="focus:outline-none text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900">Sentinel</button>
+      <button onClick={()=>filterItem('Duelist')} className="focus:outline-none text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900">Duelist</button>
+      <button onClick={()=>filterItem('Controller')} className="focus:outline-none text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900">Controller</button>
+    </div>
+      {dataItem.map((agent) => {
+        return (
+          <AgentsCard agent={agent} key={agent.uuid} />
 
-      {agents.map((agent) => {
-        return <AgentsCard agent={agent} key={agent.uuid} />;
+        );
       })}
     </>
   );
