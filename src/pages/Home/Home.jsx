@@ -1,9 +1,11 @@
 import Button from "@/components/Button";
 import BG_IMG from "@/assets/images/valorant.png";
-import Hero from "./Hero";
-import Agents from "./Agents";
-import Maps from "./Maps";
-import Guns from "./Guns";
+import Hero from "@/pages/Home/Hero";
+// import Agents from "@/pages/Home/Agents";
+import Maps from "@/pages/Home/Maps";
+import Guns from "@/pages/Home/Guns";
+import { lazy, Suspense } from "react";
+const Agents = lazy(() => import("@/pages/Home/Agents"));
 const Home = () => {
   return (
     <>
@@ -19,7 +21,9 @@ const Home = () => {
         <Button btnName="Welcome to ValPal" />
       </div>
       <Hero />
-      <Agents />
+      <Suspense>
+        <Agents />
+      </Suspense>
       <Maps />
       <Guns />
     </>
