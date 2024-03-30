@@ -41,28 +41,29 @@ const Agents = () => {
 
   return (
     <>
-      <div className="flex flex-col justify-around pt-2 text-white bg-black md:flex-row">
+      <div className="flex flex-col justify-center pt-2 text-white bg-black md:flex-row">
         <button
           onClick={() => filterItem("Initiator")}
-          className="focus:outline-none text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 md:mb-0 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900"
+          className="font-mono font-bold bg-[#ff4655] px-2 text-base hover:bg-[#191717] border-b-4 border-red-800 hover:border-yellow-400 rounded py-2.5 mb-2 text-white md:px-4 md:py-3 md:text-2xl"
         >
           Initiator
         </button>
+
         <button
           onClick={() => filterItem("Sentinel")}
-          className="focus:outline-none text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 md:mb-0 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900"
+          className="font-mono font-bold bg-[#ff4655] px-2 text-base hover:bg-[#191717] border-b-4 border-red-800 hover:border-lime-400 rounded py-2.5 mb-2 text-white md:px-4 md:py-3 md:text-2xl"
         >
           Sentinel
         </button>
         <button
           onClick={() => filterItem("Duelist")}
-          className="focus:outline-none text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 md:mb-0 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900"
+          className="font-mono font-bold bg-[#ff4655] px-2 text-base hover:bg-[#191717] border-b-4 border-red-800 hover:border-blue-400 rounded py-2.5 mb-2 text-white md:px-4 md:py-3 md:text-2xl"
         >
           Duelist
         </button>
         <button
           onClick={() => filterItem("Controller")}
-          className="focus:outline-none text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 md:mb-0 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900"
+          className="font-mono font-bold bg-[#ff4655] px-2 text-base hover:bg-[#191717] border-b-4 border-red-800 hover:border-purple-400 rounded py-2.5 mb-2 text-white md:px-4 md:py-3 md:text-2xl"
         >
           Controller
         </button>
