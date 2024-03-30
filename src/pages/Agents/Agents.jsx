@@ -1,7 +1,15 @@
 import { useEffect, useState } from "react";
+import AgentsCard from "../../components/AgentsCard";
 
 const Agents = () => {
   const [agents, setAgents] = useState([]);
+  
+  const filterItem=(categItem)=>{
+      const updatedItem=agents.filter((currEle)=>{
+            return currEle.role?.displayName===categItem;
+      });
+      setAgents(updatedItem);
+  }
 
   const fetchData = async () => {
     try {
@@ -28,49 +36,23 @@ const Agents = () => {
 
   if (agents.length === 0) {
     // Make a loading screen and use it here.
-    return <h1>Loading...</h1>;
+    return <div>
+        
+    </div>;
   }
 
   return (
     <>
+    <div className="pt-2 flex justify-around bg-black text-white">
+      <button onClick={()=>filterItem('Initiator')} className="focus:outline-none text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900">Initiator</button>
+      <button onClick={()=>filterItem('Sentinel')} className="focus:outline-none text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900">Sentinel</button>
+      <button onClick={()=>filterItem('Duelist')} className="focus:outline-none text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900">Duelist</button>
+      <button onClick={()=>filterItem('Controller')} className="focus:outline-none text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900">Controller</button>
+      <button onClick={()=>filterItem(setAgents)} className="focus:outline-none text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900">All</button>
+    </div>
       {agents.map((agent) => {
         return (
-          <div key={agent?.uuid}>
-            <a
-              href="#"
-              className={`flex flex-col items-center bg-[#111111] border border-gray-700  shadow md:flex-row md:w-full hover:bg-black`}
-              style={{ background: `#${agent.backgroundGradientColors[2]}` }}
-            >
-              <img
-                className="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-72 md:rounded-none md:rounded-s-lg"
-                src={agent?.fullPortraitV2}
-                alt="Gekko Image"
-              />
-              <div className="flex flex-col justify-between p-4 leading-normal">
-                <h3
-                  // className={`flex mb-2 text-2xl font-bold tracking-tight text-transparent font-valorant bg-clip-text bg-gradient-to-r bg-[#${agent?.backgroundGradientColors[0]}]`}
-                  className={`flex mb-2 text-2xl font-bold font-valorant text-[#${agent?.backgroundGradientColors[0]}]`}
-                  style={{ color: `#${agent.backgroundGradientColors[0]}` }}
-                >
-                  <img
-                    className="w-10 h-10 mr-4 -mt-2 border rounded-full border-lime-500"
-                    src={agent?.displayIcon}
-                    alt=""
-                  />
-                  {agent?.displayName}
-                </h3>
-                <h5
-                  className="flex mb-2 text-lg font-bold tracking-tight text-transparent font-valorant bg-clip-text bg-gradient-to-r from-lime-400 to-green-700"
-                  style={{ color: `#${agent.backgroundGradientColors[1]}` }}
-                >
-                  {agent?.role?.displayName}
-                </h5>
-                <p className="mb-3 font-normal text-[#ece8e1]">
-                  {agent?.description}
-                </p>
-              </div>
-            </a>
-          </div>
+          <AgentsCard agent={agent} key={agent.uuid} />
         );
       })}
     </>
