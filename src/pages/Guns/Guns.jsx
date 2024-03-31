@@ -25,7 +25,7 @@ const Guns = () => {
     fetchData()
   },[])
 
-  console.log(gunsData)
+  
 
   return (
     <div>

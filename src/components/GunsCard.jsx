@@ -45,8 +45,8 @@ const GunsCard = ({ guns }) => {
          </div>
         
           <div className="flex gap-10 font-valorant">
-            <h2>FireRate - {guns?.weaponStats?.fireRate}</h2>
-            <p>MagazineSize - {guns?.weaponStats?.magazineSize}</p>
+            <h2>FireRate - {guns?.weaponStats?.fireRate ||12}</h2>
+            <p>MagazineSize - {guns?.weaponStats?.magazineSize || 12}</p>
           </div>
         </div>
       </div>

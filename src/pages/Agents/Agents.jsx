@@ -34,7 +34,6 @@ const Agents = () => {
     fetchData();
   }, []);
 
-  console.log(dataItem);
 
   if (dataItem.length === 0) {
     // Make a loading screen and use it here.
