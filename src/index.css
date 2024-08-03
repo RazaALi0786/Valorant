@@ -3,6 +3,6 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: 'Valorant';
-    src: url('/Fonts/Valorant.ttf');
+  font-family: "Valorant";
+  src: url("/Fonts/Valorant.ttf");
 }
